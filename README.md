@@ -17,7 +17,7 @@
 
 ### 🛠️ Languages & Tools
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=cpp,dotnet,js,python,html,css,mysql,figma" />
+  <img src="https://skillicons.dev/icons?i=cpp,dotnet,js,python,html,css,mysql,figma,vscode" />
   
 </p>
 
