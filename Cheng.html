@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="en" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="/_sdk/element_sdk.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+  <style>
+    body {
+      box-sizing: border-box;
+    }
+    * {
+      font-family: 'Outfit', sans-serif;
+    }
+    .gradient-text {
+      background: linear-gradient(135deg, var(--primary-action) 0%, var(--secondary-action) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .card-hover {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    }
+    .fade-in {
+      animation: fadeIn 0.8s ease-out forwards;
+      opacity: 0;
+    }
+    @keyframes fadeIn {
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .fade-in:nth-child(1) { animation-delay: 0.1s; transform: translateY(20px); }
+    .fade-in:nth-child(2) { animation-delay: 0.2s; transform: translateY(20px); }
+    .fade-in:nth-child(3) { animation-delay: 0.3s; transform: translateY(20px); }
+  </style>
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="h-full">
+  <div id="app-wrapper" class="w-full h-full overflow-auto" style="background-color: #0f172a;"><!-- Navigation -->
+   <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-opacity-80" style="background-color: rgba(15, 23, 42, 0.9);">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+     <div class="text-xl font-bold" style="color: #f8fafc;">
+      TIS Portfolio
+     </div>
+     <div class="flex gap-8"><a href="#home" class="text-sm font-medium transition-colors hover:opacity-80" style="color: #94a3b8;">Home</a> <a href="#work" class="text-sm font-medium transition-colors hover:opacity-80" style="color: #94a3b8;">Assignment</a>
+     </div>
+    </div>
+   </nav><!-- Hero Section -->
+   <section id="home" class="min-h-screen flex items-center justify-center px-6 pt-20">
+    <div class="max-w-4xl mx-auto text-center">
+     <div class="fade-in mb-6">
+      <div class="w-32 h-32 mx-auto rounded-full flex items-center justify-center text-5xl" style="background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);">
+       💼
+      </div>
+     </div>
+     <h1 id="hero-name" class="fade-in text-5xl md:text-7xl font-bold mb-4" style="color: #f8fafc;">NGOI JIN CHENG</h1>
+     <p id="hero-title" class="fade-in text-xl md:text-2xl font-medium mb-6" style="color: #6366f1;">TIS PORTFOLIO</p>
+     <p id="hero-description" class="fade-in text-lg max-w-2xl mx-auto mb-10" style="color: #94a3b8;">This website showcases all my assignments and projects for Technology and Information, highlighting my skills in creating digital solutions.</p>
+     <div class="fade-in flex gap-4 justify-center"><a href="#work" class="px-8 py-3 rounded-full font-medium transition-all hover:scale-105" style="background-color: #6366f1; color: #f8fafc;">View My Assignment</a>
+     </div>
+    </div>
+   </section><!-- Work Section -->
+   <section id="work" class="py-24 px-6" style="background-color: #1e293b;">
+    <div class="max-w-6xl mx-auto">
+     <h2 class="text-4xl font-bold text-center mb-16" style="color: #f8fafc;">My Assignment</h2>
+     <div class="grid md:grid-cols-3 gap-6">
+      <div class="card-hover rounded-2xl overflow-hidden cursor-pointer" style="background-color: #0f172a;" onclick="showIndustrialTalk1()">
+       <div class="h-48 flex items-center justify-center text-6xl" style="background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);">
+        🎨
+       </div>
+       <div class="p-6">
+        <h3 class="text-xl font-semibold mb-2" style="color: #f8fafc;">Industrial Talk 1</h3>
+        <p class="text-sm" style="color: #94a3b8;">Project Management and System Development</p>
+       </div>
+      </div>
+      <div class="card-hover rounded-2xl overflow-hidden cursor-pointer" style="background-color: #0f172a;" onclick="showAssignment2()">
+       <div class="h-48 flex items-center justify-center text-6xl" style="background: linear-gradient(135deg, #a855f7 0%, #ec4899 100%);">
+        📱
+       </div>
+       <div class="p-6">
+        <h3 class="text-xl font-semibold mb-2" style="color: #f8fafc;">Industrial Visit 1</h3>
+        <p class="text-sm" style="color: #94a3b8;">Industrial Visit - UTM Digital</p>
+       </div>
+      </div>
+      <div class="card-hover rounded-2xl overflow-hidden cursor-pointer" style="background-color: #0f172a;" onclick="showIndustrialTalk()">
+       <div class="h-48 flex items-center justify-center text-6xl" style="background: linear-gradient(135deg, #06b6d4 0%, #6366f1 100%);">
+        🌐
+       </div>
+       <div class="p-6">
+        <h3 class="text-xl font-semibold mb-2" style="color: #f8fafc;">Industrial Talk</h3>
+        <p class="text-sm" style="color: #94a3b8;">PPG Company</p>
+       </div>
+      </div>
+      <div class="card-hover rounded-2xl overflow-hidden cursor-pointer" style="background-color: #0f172a;" onclick="showIndustrialVisit()">
+       <div class="h-48 flex items-center justify-center text-6xl" style="background: linear-gradient(135deg, #f59e0b 0%, #ef4444 100%);">
+        💻
+       </div>
+       <div class="p-6">
+        <h3 class="text-xl font-semibold mb-2" style="color: #f8fafc;">Industrial Visit 2</h3>
+        <p class="text-sm" style="color: #94a3b8;">Johor Port Berhad</p>
+       </div>
+      </div>
+      <div class="card-hover rounded-2xl overflow-hidden cursor-pointer" style="background-color: #0f172a;" onclick="showDesignThinking()">
+       <div class="h-48 flex items-center justify-center text-6xl" style="background: linear-gradient(135deg, #10b981 0%, #06b6d4 100%);">
+        📊
+       </div>
+       <div class="p-6">
+        <h3 class="text-xl font-semibold mb-2" style="color: #f8fafc;">Design Thinking Project</h3>
+        <p class="text-sm" style="color: #94a3b8;">AI-Powered Movie Ticket Booking System</p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- Footer -->
+   <footer class="py-8 px-6 border-t" style="border-color: #1e293b;">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+     <p class="text-sm" style="color: #94a3b8;">© 2024 Portfolio. All rights reserved.</p>
+     <div class="flex gap-6"><span class="text-2xl cursor-pointer hover:scale-110 transition-transform">🐦</span> <span class="text-2xl cursor-pointer hover:scale-110 transition-transform">💼</span> <span class="text-2xl cursor-pointer hover:scale-110 transition-transform">📸</span>
+     </div>
+    </div>
+   </footer>
+  </div><!-- Industrial Talk 1 Detail Page (Hidden by default) -->
+  <div id="industrial-talk1-page" class="w-full h-full overflow-auto hidden" style="background-color: #0f172a;">
+   <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-opacity-80" style="background-color: rgba(15, 23, 42, 0.9);">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+     <div class="text-xl font-bold" style="color: #f8fafc;">
+      TIS Portfolio
+     </div><button onclick="hideIndustrialTalk1()" class="px-6 py-2 rounded-full font-medium transition-all hover:scale-105" style="background-color: #6366f1; color: #f8fafc;">← Back to Home</button>
+    </div>
+   </nav>
+   <section class="min-h-screen px-6 pt-32 pb-16">
+    <div class="max-w-4xl mx-auto">
+     <h1 class="text-5xl font-bold mb-4 text-center" style="color: #f8fafc;">Industrial Talk 1</h1>
+     <p class="text-xl text-center mb-12" style="color: #6366f1;">Project Management and System Development</p>
+     <div class="rounded-3xl p-8 mb-8 text-center" style="background-color: #1e293b;">
+      <h2 class="text-2xl font-bold mb-6" style="color: #f8fafc;">Academic Writing Document</h2><a href="image/Assignment 3_TIS_Group 4.pdf" target="_blank" rel="noopener noreferrer" class="inline-block px-8 py-4 rounded-full font-semibold transition-all hover:scale-105" style="background-color: #6366f1; color: #f8fafc;"> View Academic Writing PDF → </a>
+     </div>
+     <div class="rounded-3xl p-8 mb-8" style="background-color: #1e293b;">
+      <h2 class="text-2xl font-bold mb-4" style="color: #f8fafc;">About This Talk</h2>
+      <p class="text-lg leading-relaxed mb-4" style="color: #94a3b8;">This industrial talk focused on Project Management and System Development methodologies used in modern software development environments.</p>
+      <p class="text-lg leading-relaxed" style="color: #94a3b8;">The session provided insights into industry best practices, tools, and techniques for managing complex technology projects and developing robust systems.</p>
+     </div>
+     <div class="rounded-3xl p-8" style="background-color: #1e293b;">
+      <h2 class="text-2xl font-bold mb-4" style="color: #f8fafc;">Key Topics</h2>
+      <ul class="space-y-3">
+       <li class="flex items-start"><span class="text-2xl mr-3">📋</span> <span style="color: #94a3b8;">Project management frameworks and methodologies</span></li>
+       <li class="flex items-start"><span class="text-2xl mr-3">💻</span> <span style="color: #94a3b8;">System development lifecycle (SDLC)</span></li>
+       <li class="flex items-start"><span class="text-2xl mr-3">🔄</span> <span style="color: #94a3b8;">Agile and DevOps practices</span></li>
+       <li class="flex items-start"><span class="text-2xl mr-3">📊</span> <span style="color: #94a3b8;">Project planning and execution strategies</span></li>
+      </ul>
+     </div>
+    </div>
+   </section>
+  </div><!-- Industrial Talk Detail Page (Hidden by default) -->
+  <div id="industrial-talk-page" class="w-full h-full overflow-auto hidden" style="background-color: #0f172a;">
+   <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-opacity-80" style="background-color: rgba(15, 23, 42, 0.9);">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+     <div class="text-xl font-bold" style="color: #f8fafc;">
+      TIS Portfolio
+     </div><button onclick="hideIndustrialTalk()" class="px-6 py-2 rounded-full font-medium transition-all hover:scale-105" style="background-color: #6366f1; color: #f8fafc;">← Back to Home</button>
+    </div>
+   </nav>
+   <section class="min-h-screen px-6 pt-32 pb-16">
+    <div class="max-w-4xl mx-auto">
+     <h1 class="text-5xl font-bold mb-4 text-center" style="color: #f8fafc;">Industrial Talk</h1>
+     <p class="text-xl text-center mb-12" style="color: #06b6d4;">PPG Company</p>
+     <div class="rounded-3xl p-8 mb-8 text-center" style="background-color: #1e293b;">
+      <h2 class="text-2xl font-bold mb-6" style="color: #f8fafc;">Event Poster</h2><a href="https://www.canva.com/design/DAG7HpAYGkg/mybb0zvI0uwrrYlOb0CoVA/view?utm_content=DAG7HpAYGkg&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hca789095f9" target="_blank" rel="noopener noreferrer" class="inline-block px-8 py-4 rounded-full font-semibold transition-all hover:scale-105" style="background-color: #06b6d4; color: #f8fafc;"> View PPG Company Poster → </a>
+     </div>
+     <div class="rounded-3xl p-8 mb-8" style="background-color: #1e293b;">
+      <h2 class="text-2xl font-bold mb-4" style="color: #f8fafc;">About This Talk</h2>
+      <p class="text-lg leading-relaxed mb-4" style="color: #94a3b8;">The Industrial Talk with PPG Company provided valuable insights into the coatings and specialty materials industry.</p>
+      <p class="text-lg leading-relaxed" style="color: #94a3b8;">PPG Industries is a global supplier of paints, coatings, and specialty materials, serving customers in construction, consumer products, industrial, and transportation markets.</p>
+     </div>
+     <div class="rounded-3xl p-8" style="background-color: #1e293b;">
+      <h2 class="text-2xl font-bold mb-4" style="color: #f8fafc;">Key Topics</h2>
+      <ul class="space-y-3">
+       <li class="flex items-start"><span class="text-2xl mr-3">🏭</span> <span style="color: #94a3b8;">Manufacturing processes and quality control</span></li>
+       <li class="flex items-start"><span class="text-2xl mr-3">🔬</span> <span style="color: #94a3b8;">Innovation in coatings technology</span></li>
+       <li class="flex items-start"><span class="text-2xl mr-3">🌍</span> <span style="color: #94a3b8;">Sustainability and environmental practices</span></li>
+       <li class="flex items-start"><span class="text-2xl mr-3">💼</span> <span style="color: #94a3b8;">Career opportunities in the industry</span></li>
+      </ul>
+     </div>
+    </div>
+   </section>
+  </div><!-- Industrial Visit Detail Page (Hidden by default) -->
+  <div id="industrial-visit-page" class="w-full h-full overflow-auto hidden" style="background-color: #0f172a;">
+   <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-opacity-80" style="background-color: rgba(15, 23, 42, 0.9);">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+     <div class="text-xl font-bold" style="color: #f8fafc;">
+      TIS Portfolio
+     </div><button onclick="hideIndustrialVisit()" class="px-6 py-2 rounded-full font-medium transition-all hover:scale-105" style="background-color: #6366f1; color: #f8fafc;">← Back to Home</button>
+    </div>
+   </nav>
+   <section class="min-h-screen px-6 pt-32 pb-16">
+    <div class="max-w-4xl mx-auto">
+     <h1 class="text-5xl font-bold mb-4 text-center" style="color: #f8fafc;">Industrial Visit 2</h1>
+     <p class="text-xl text-center mb-12" style="color: #f59e0b;">Johor Port Berhad</p>
+     <div class="rounded-3xl p-8 mb-8 text-center" style="background-color: #1e293b;">
+      <h2 class="text-2xl font-bold mb-6" style="color: #f8fafc;">Newsletter</h2><a href="https://www.canva.com/design/DAG-ZXvvO2E/To1TynD6fuPUpdVO4yIiEQ/view?utm_content=DAG-ZXvvO2E&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h8f2bd11024" target="_blank" rel="noopener noreferrer" class="inline-block px-8 py-4 rounded-full font-semibold transition-all hover:scale-105" style="background-color: #f59e0b; color: #f8fafc;"> View Johor Port Newsletter → </a>
+     </div>
+     <div class="rounded-3xl p-8 mb-8" style="background-color: #1e293b;">
+      <h2 class="text-2xl font-bold mb-4" style="color: #f8fafc;">About This Visit</h2>
+      <p class="text-lg leading-relaxed mb-4" style="color: #94a3b8;">Our industrial visit to Johor Port Berhad provided valuable insights into port operations and logistics management in one of Malaysia's major maritime gateways.</p>
+      <p class="text-lg leading-relaxed" style="color: #94a3b8;">Johor Port is a multi-purpose port offering comprehensive services for container, conventional cargo, bulk, and liquid bulk operations.</p>
+     </div>
+     <div class="rounded-3xl p-8" style="background-color: #1e293b;">
+      <h2 class="text-2xl font-bold mb-4" style="color: #f8fafc;">Key Learnings</h2>
+      <ul class="space-y-3">
+       <li class="flex items-start"><span class="text-2xl mr-3">🚢</span> <span style="color: #94a3b8;">Port operations and cargo handling procedures</span></li>
+       <li class="flex items-start"><span class="text-2xl mr-3">📦</span> <span style="color: #94a3b8;">Supply chain and logistics management</span></li>
+       <li class="flex items-start"><span class="text-2xl mr-3">🔧</span> <span style="color: #94a3b8;">Port infrastructure and technology systems</span></li>
+       <li class="flex items-start"><span class="text-2xl mr-3">🌊</span> <span style="color: #94a3b8;">Maritime safety and environmental practices</span></li>
+      </ul>
+     </div>
+    </div>
+   </section>
+  </div><!-- Design Thinking Detail Page (Hidden by default) -->
+  <div id="design-thinking-page" class="w-full h-full overflow-auto hidden" style="background-color: #0f172a;">
+   <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-opacity-80" style="background-color: rgba(15, 23, 42, 0.9);">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+     <div class="text-xl font-bold" style="color: #f8fafc;">
+      TIS Portfolio
+     </div><button onclick="hideDesignThinking()" class="px-6 py-2 rounded-full font-medium transition-all hover:scale-105" style="background-color: #6366f1; color: #f8fafc;">← Back to Home</button>
+    </div>
+   </nav>
+   <section class="min-h-screen px-6 pt-32 pb-16">
+    <div class="max-w-4xl mx-auto">
+     <h1 class="text-5xl font-bold mb-4 text-center" style="color: #f8fafc;">Design Thinking Project</h1>
+     <p class="text-xl text-center mb-12" style="color: #10b981;">AI-Powered Movie Ticket Booking System</p>
+     <div class="rounded-3xl p-8 mb-8 text-center" style="background-color: #1e293b;">
+      <h2 class="text-2xl font-bold mb-6" style="color: #f8fafc;">Access the System</h2><a href="https://fikryanddhira.my.canva.site/ai-powered-movie-ticket-booking-system-prototype-by-group-4" target="_blank" rel="noopener noreferrer" class="inline-block px-8 py-4 rounded-full font-semibold transition-all hover:scale-105 mb-6" style="background-color: #10b981; color: #f8fafc;"> View Movie Booking System → </a>
+      <div class="rounded-xl p-4 inline-block" style="background-color: #0f172a;">
+       <p class="text-sm mb-1" style="color: #94a3b8;">System Password:</p>
+       <p class="text-lg font-semibold" style="color: #10b981;">Group4@UI</p>
+      </div>
+     </div>
+     <div class="rounded-3xl p-8 mb-8" style="background-color: #1e293b;">
+      <h2 class="text-2xl font-bold mb-4" style="color: #f8fafc;">About This Project</h2>
+      <p class="text-lg leading-relaxed mb-4" style="color: #94a3b8;">Our Design Thinking project focuses on creating an AI-powered movie ticket booking system that revolutionizes the way users discover and book movie tickets.</p>
+      <p class="text-lg leading-relaxed" style="color: #94a3b8;">Through user research, prototyping, and iterative design, we developed a solution that combines artificial intelligence with intuitive user experience to make movie booking seamless and personalized.</p>
+     </div>
+     <div class="rounded-3xl p-8" style="background-color: #1e293b;">
+      <h2 class="text-2xl font-bold mb-4" style="color: #f8fafc;">Key Features</h2>
+      <ul class="space-y-3">
+       <li class="flex items-start"><span class="text-2xl mr-3">🤖</span> <span style="color: #94a3b8;">AI chatbot assistant</span></li>
+       <li class="flex items-start"><span class="text-2xl mr-3">🎬</span> <span style="color: #94a3b8;">All in one platform (GSC, TGV, MBO)</span></li>
+       <li class="flex items-start"><span class="text-2xl mr-3">💳</span> <span style="color: #94a3b8;">Can display different promotions from different cinemas, help to save cost</span></li>
+       <li class="flex items-start"><span class="text-2xl mr-3">📱</span> <span style="color: #94a3b8;">Personalized movie recommendation</span></li>
+      </ul>
+     </div>
+    </div>
+   </section>
+  </div><!-- Assignment 2 Detail Page (Hidden by default) -->
+  <div id="assignment2-page" class="w-full h-full overflow-auto hidden" style="background-color: #0f172a;">
+   <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-opacity-80" style="background-color: rgba(15, 23, 42, 0.9);">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+     <div class="text-xl font-bold" style="color: #f8fafc;">
+      TIS Portfolio
+     </div><button onclick="hideAssignment2()" class="px-6 py-2 rounded-full font-medium transition-all hover:scale-105" style="background-color: #6366f1; color: #f8fafc;">← Back to Home</button>
+    </div>
+   </nav>
+   <section class="min-h-screen px-6 pt-32 pb-16">
+    <div class="max-w-4xl mx-auto">
+     <h1 class="text-5xl font-bold mb-4 text-center" style="color: #f8fafc;">Industrial Visit 1</h1>
+     <p class="text-xl text-center mb-12" style="color: #a855f7;">Industrial Visit - UTM Digital</p>
+     <div class="rounded-3xl overflow-hidden mb-8" style="background-color: #1e293b;">
+      <div class="aspect-video w-full"><iframe id="video-iframe" class="w-full h-full" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+     </div>
+     <div class="rounded-3xl p-8 mb-8" style="background-color: #1e293b;">
+      <h2 class="text-2xl font-bold mb-4" style="color: #f8fafc;">About This Visit</h2>
+      <p class="text-lg leading-relaxed mb-4" style="color: #94a3b8;">Our industrial visit to UTM Digital provided valuable insights into the latest digital technologies and innovations in the technology sector.</p>
+      <p class="text-lg leading-relaxed" style="color: #94a3b8;">During this visit, we explored various aspects of digital transformation, learned about cutting-edge solutions, and gained practical knowledge about industry practices.</p>
+     </div>
+     <div class="rounded-3xl p-8" style="background-color: #1e293b;">
+      <h2 class="text-2xl font-bold mb-4" style="color: #f8fafc;">Key Learnings</h2>
+      <ul class="space-y-3">
+       <li class="flex items-start"><span class="text-2xl mr-3">🎯</span> <span style="color: #94a3b8;">Understanding digital infrastructure and systems</span></li>
+       <li class="flex items-start"><span class="text-2xl mr-3">💡</span> <span style="color: #94a3b8;">Exposure to industry-standard tools and technologies</span></li>
+       <li class="flex items-start"><span class="text-2xl mr-3">🤝</span> <span style="color: #94a3b8;">Networking with industry professionals</span></li>
+       <li class="flex items-start"><span class="text-2xl mr-3">📚</span> <span style="color: #94a3b8;">Real-world application of theoretical concepts</span></li>
+      </ul>
+     </div>
+    </div>
+   </section>
+  </div>
+  <script>
+    const defaultConfig = {
+      hero_name: 'NGOI JIN CHENG',
+      hero_title: 'TIS PORTFOLIO',
+      hero_description: "This website showcases all my assignments and projects for Technology and Information, highlighting my skills in creating digital solutions.",
+      background_color: '#0f172a',
+      surface_color: '#1e293b',
+      text_color: '#f8fafc',
+      primary_action: '#6366f1',
+      secondary_action: '#a855f7',
+      font_family: 'Outfit',
+      font_size: 16
+    };
+
+    async function onConfigChange(config) {
+      const c = { ...defaultConfig, ...config };
+      
+      // Update text content
+      document.getElementById('hero-name').textContent = c.hero_name;
+      document.getElementById('hero-title').textContent = c.hero_title;
+      document.getElementById('hero-description').textContent = c.hero_description;
+
+      // Update colors
+      document.documentElement.style.setProperty('--primary-action', c.primary_action);
+      document.documentElement.style.setProperty('--secondary-action', c.secondary_action);
+      
+      document.getElementById('app-wrapper').style.backgroundColor = c.background_color;
+      document.getElementById('hero-name').style.color = c.text_color;
+      document.getElementById('hero-title').style.color = c.primary_action;
+      document.getElementById('hero-description').style.color = '#94a3b8';
+
+      // Update fonts
+      const fontStack = `${c.font_family}, sans-serif`;
+      document.body.style.fontFamily = fontStack;
+      
+      const baseSize = c.font_size;
+      document.getElementById('hero-name').style.fontSize = `${baseSize * 3.5}px`;
+      document.getElementById('hero-title').style.fontSize = `${baseSize * 1.5}px`;
+      document.getElementById('hero-description').style.fontSize = `${baseSize * 1.125}px`;
+    }
+
+    function mapToCapabilities(config) {
+      const c = { ...defaultConfig, ...config };
+      return {
+        recolorables: [
+          {
+            get: () => c.background_color,
+            set: (value) => { c.background_color = value; window.elementSdk.setConfig({ background_color: value }); }
+          },
+          {
+            get: () => c.surface_color,
+            set: (value) => { c.surface_color = value; window.elementSdk.setConfig({ surface_color: value }); }
+          },
+          {
+            get: () => c.text_color,
+            set: (value) => { c.text_color = value; window.elementSdk.setConfig({ text_color: value }); }
+          },
+          {
+            get: () => c.primary_action,
+            set: (value) => { c.primary_action = value; window.elementSdk.setConfig({ primary_action: value }); }
+          },
+          {
+            get: () => c.secondary_action,
+            set: (value) => { c.secondary_action = value; window.elementSdk.setConfig({ secondary_action: value }); }
+          }
+        ],
+        borderables: [],
+        fontEditable: {
+          get: () => c.font_family,
+          set: (value) => { c.font_family = value; window.elementSdk.setConfig({ font_family: value }); }
+        },
+        fontSizeable: {
+          get: () => c.font_size,
+          set: (value) => { c.font_size = value; window.elementSdk.setConfig({ font_size: value }); }
+        }
+      };
+    }
+
+    function mapToEditPanelValues(config) {
+      const c = { ...defaultConfig, ...config };
+      return new Map([
+        ['hero_name', c.hero_name],
+        ['hero_title', c.hero_title],
+        ['hero_description', c.hero_description]
+      ]);
+    }
+
+    // Show Industrial Talk 1 detail page
+    function showIndustrialTalk1() {
+      document.getElementById('app-wrapper').classList.add('hidden');
+      document.getElementById('industrial-talk1-page').classList.remove('hidden');
+    }
+
+    // Hide Industrial Talk 1 detail page and return to home
+    function hideIndustrialTalk1() {
+      document.getElementById('industrial-talk1-page').classList.add('hidden');
+      document.getElementById('app-wrapper').classList.remove('hidden');
+    }
+
+    // Show Design Thinking detail page
+    function showDesignThinking() {
+      document.getElementById('app-wrapper').classList.add('hidden');
+      document.getElementById('design-thinking-page').classList.remove('hidden');
+    }
+
+    // Hide Design Thinking detail page and return to home
+    function hideDesignThinking() {
+      document.getElementById('design-thinking-page').classList.add('hidden');
+      document.getElementById('app-wrapper').classList.remove('hidden');
+    }
+
+    // Show Industrial Talk detail page
+    function showIndustrialTalk() {
+      document.getElementById('app-wrapper').classList.add('hidden');
+      document.getElementById('industrial-talk-page').classList.remove('hidden');
+    }
+
+    // Hide Industrial Talk detail page and return to home
+    function hideIndustrialTalk() {
+      document.getElementById('industrial-talk-page').classList.add('hidden');
+      document.getElementById('app-wrapper').classList.remove('hidden');
+    }
+
+    // Show Industrial Visit detail page
+    function showIndustrialVisit() {
+      document.getElementById('app-wrapper').classList.add('hidden');
+      document.getElementById('industrial-visit-page').classList.remove('hidden');
+    }
+
+    // Hide Industrial Visit detail page and return to home
+    function hideIndustrialVisit() {
+      document.getElementById('industrial-visit-page').classList.add('hidden');
+      document.getElementById('app-wrapper').classList.remove('hidden');
+    }
+
+    // Show Assignment 2 detail page
+    function showAssignment2() {
+      document.getElementById('app-wrapper').classList.add('hidden');
+      document.getElementById('assignment2-page').classList.remove('hidden');
+      // Set video URL (you can replace this with your actual video URL)
+      document.getElementById('video-iframe').src = 'https://www.youtube.com/embed/YbkUN-8s45k';
+    }
+
+    // Hide Assignment 2 detail page and return to home
+    function hideAssignment2() {
+      document.getElementById('assignment2-page').classList.add('hidden');
+      document.getElementById('app-wrapper').classList.remove('hidden');
+      // Clear video to stop playback
+      document.getElementById('video-iframe').src = '';
+    }
+
+    // Smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    // Initialize SDK
+    if (window.elementSdk) {
+      window.elementSdk.init({
+        defaultConfig,
+        onConfigChange,
+        mapToCapabilities,
+        mapToEditPanelValues
+      });
+    }
+  </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9bfd4e78215c0c6d',t:'MTc2ODczMTA2OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
