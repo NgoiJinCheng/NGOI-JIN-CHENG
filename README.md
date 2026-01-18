@@ -1,6 +1,6 @@
 <p align="center">
-
-<img src="https://media.giphy.com/media/qgQUggA C3Pfv687qPC/giphy.gif" width="280"/> </p>
+  <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="260" />
+</p>
 
 <h1 align="center">Hi 👋, I'm Ngoi Jin Cheng</h1>
 <h3 align="center">Multimedia Graphic Student | Malaysia 🇲🇾</h3>
