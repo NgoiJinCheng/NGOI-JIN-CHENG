@@ -16,7 +16,7 @@
 ---
 I graduated with a Diploma in Computer Science (in collaboration with UTM) from ICYM. Previously, I worked as an IT Assistant at MYAMAX Sdn. Bhd., where I assisted in developing the Tracking and Matching System. I am currently pursuing a Bachelor of Computer Science (Graphics and Multimedia Software) at Universiti Teknologi Malaysia (UTM).
 
-
+---
 ### 🛠️ Languages & Tools
 <p align="center">
   <img src="https://skillicons.dev/icons?i=cpp,dotnet,js,python,html,css,mysql,figma,vscode" />
