@@ -23,7 +23,9 @@
 ---
 
 <p align="center">
-  <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" />
+  <img src="https://img.shields.io/badge/C++-Expert-blue" />
+  <img src="https://img.shields.io/badge/Python-Intermediate-yellow" />
+  <img src="https://img.shields.io/badge/JS-Beginner-lightgrey" />
 </p>
 
 
