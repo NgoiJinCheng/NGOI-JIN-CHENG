@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2p4Y2JqNjFqZ2ZpN3Q1emZxZ3FvZ2R1dGJ3d2JjM2k2dHB1a3Z5ZSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/coxQHKASG60HrHtvkt/giphy.gif" width="280"/>
+  <img src="[https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2p4Y2JqNjFqZ2ZpN3Q1emZxZ3FvZ2R1dGJ3d2JjM2k2dHB1a3Z5ZSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/coxQHKASG60HrHtvkt/giphy.gif](https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif)" width="280"/>
 </p>
 
 <h1 align="center">Hi 👋, I'm Ngoi Jin Cheng</h1>
