@@ -24,8 +24,10 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/C++-Expert-blue" />
-  <img src="https://img.shields.io/badge/Python-Intermediate-yellow" />
+  <img src="https://img.shields.io/badge/.NET-Expert-blue" />
   <img src="https://img.shields.io/badge/JS-Beginner-lightgrey" />
+  <img src="https://img.shields.io/badge/SQL -Expert-blue" />
+  <img src="https://img.shields.io/badge/Python-Beginner-lightgrey" />
 </p>
 
 
