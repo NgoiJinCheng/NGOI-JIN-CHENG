@@ -18,7 +18,7 @@
 ### 🛠️ Languages & Tools
 <p align="center">
   <img src="https://skillicons.dev/icons?i=cpp,dotnet,js,python,html,css,mysql,figma" />
-  <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Canva_Logo.png" alt="Canva" width="40" />
+  
 </p>
 
 
