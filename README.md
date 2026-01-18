@@ -44,4 +44,4 @@
 ---
 
 ### 📫 Connect With Me
-- GitHub: [https://github.com/NgoiJinCheng]
+- GitHub: [ngoijincheng@graduate.utm.my]
