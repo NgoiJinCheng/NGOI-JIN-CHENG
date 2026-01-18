@@ -35,7 +35,7 @@
 
 ### 📂 Featured Repositories
 - 📌 *Fruit Ninja Game (C++)*
-- 📌 *Database Assignment (SQL)*
+- 📌 *AI-Powered Movie Ticket Booking System UI (Canva Design)*
 - 📌 *System Analysis Case Study*
 
 ---
