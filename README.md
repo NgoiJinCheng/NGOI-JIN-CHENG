@@ -17,8 +17,9 @@
 
 ### 🛠️ Languages & Tools
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=cpp,dotnet,js,python,html,css,mysql" />
+  <img src="https://skillicons.dev/icons?i=cpp,dotnet,js,python,html,css,mysql,figma,canva" />
 </p>
+
 
 ---
 
@@ -36,7 +37,7 @@
 ### 📂 Featured Repositories
 - 📌 *Fruit Ninja Game (C++)*
 - 📌 *AI-Powered Movie Ticket Booking System UI (Canva Design)*
-- 📌 *System Analysis Case Study*
+- 📌 *Watch Landing Page UI (Figma)*
 
 ---
 
